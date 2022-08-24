@@ -1,0 +1,34 @@
+<div class="landing">
+    <div class="header">
+        GIPHY APP
+        <input type="text" [(ngModel)] = "searchString" (ngModelChange) = "searchOperation()" class ='search-bar' placeholder="Search for a GIF"/>
+ 
+    </div>
+
+
+
+    <div class="container-fluid" *ngIf = "gifs">
+        <div *ngFor ="let gif of gifs" class="container-fluid">
+            <img [src]=gif.images.original.url alt="" class = "gify-img">
+        </div>
+
+
+
+
+
+    </div>
+
+
+
+    <button class="load-more" (click) = "loadMore()">
+        Load More
+    </button>
+ 
+     
+        <!-- <div class="container-fluid" *ngIf = "searchGif">
+        <div *ngFor ="let img of searchGif.data" class="searchResults">
+            <img [src]=img.images.original.url alt="" class = "gify-img">
+        </div>
+
+    </div> -->
+</div>

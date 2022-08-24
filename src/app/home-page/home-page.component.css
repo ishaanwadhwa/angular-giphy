@@ -1,0 +1,37 @@
+.landing { 
+    min-height: 100vh;
+    text-align: center;
+    background-color: azure;
+}
+
+.container-fluid { 
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+.gify-img {     
+    max-height: 300px;
+    max-width: 300px;
+}
+
+.header { 
+    width: 100%;
+    font-size: 80px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.search-bar { 
+    font-size: 15px;
+    width: 80%;
+    border-radius: 10px;
+}
+
+
+.load-more { 
+    padding: 10px;
+    color: rgb(85, 85, 108);
+
+}
